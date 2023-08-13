@@ -28,8 +28,7 @@ public class GameServlet extends HttpServlet {
             request.setAttribute("question", "Ты отклонил вызов.\n" +
                     "Поражение\n");
         }
-//        PrintWriter printWriter = response.getWriter();
-//        printWriter.println(userAnswer);
+
         request.getRequestDispatcher("/game.jsp").forward(request, response);
 
 

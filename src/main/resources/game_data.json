@@ -1,0 +1,68 @@
+{
+  "questions": [
+    {
+      "stage": 1,
+      "content": "Ты потерял память.\nПринять вызов НЛО?"
+    },
+    {
+      "stage": 2,
+      "content": "Ты принял вызов.\nПоднимаешься на мостик к капитану?"
+    },
+    {
+      "stage": 3,
+      "content": "Ты поднялся на мостик.\nТы кто?"
+    }
+  ],
+  "answers": [
+    {
+      "content": "Принять вызов\n",
+      "targetStage": 2
+    },
+    {
+      "content": "Отклонить вызов\n",
+      "targetStage": "gameOver"
+    },
+    {
+      "content": "Подняться на мостик\n",
+      "targetStage": 3
+    },
+    {
+      "content": "Отказаться подниматься на мостик\n",
+      "targetStage": "gameOver"
+    },
+    {
+      "content": "Рассказать правду о себе\n",
+      "targetStage": "winPage"
+    },
+    {
+      "content": "Солгать о себе\n",
+      "targetStage": "gameOver"
+    }
+  ],
+  "results": [
+    {
+      "stage": "gameOver",
+      "content": "Ты отклонил вызов. Поражение\n"
+    },
+    {
+      "stage": "winPage",
+      "content": "Тебя вернули домой. Победа\n"
+    },
+    {
+      "stage": 1,
+      "content": "Ты отклонил вызов. Поражение\n"
+    },
+    {
+      "stage": 2,
+      "content": "Ты не пошел на переговоры. Поражение\n"
+    },
+    {
+      "stage": 3,
+      "content": "Твою ложь разоблачили. Поражение\n"
+    },
+    {
+      "stage": 3,
+      "content": "Тебя вернули домой. Победа\n"
+    }
+  ]
+}
