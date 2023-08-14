@@ -15,8 +15,8 @@
 <h1>Congratulations! You Win!</h1>
 <h2>${resultText}</h2>
 
-<form action="game" method="get">
-    <button type="submit"> Restart the game </button>
+<form action="game" method="post">
+    <button type="submit" name="reset" value="true">Start Over</button>
 </form>
 <!-- Add any additional content or styling as needed -->
 </body>

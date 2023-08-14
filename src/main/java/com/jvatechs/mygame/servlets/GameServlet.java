@@ -29,6 +29,7 @@ public class GameServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+
         if (currentQuestionIndex < questions.size()) {
             Question currentQuestion = questions.get(currentQuestionIndex);
             request.setAttribute("question", currentQuestion);
@@ -42,17 +43,19 @@ public class GameServlet extends HttpServlet {
             // request.getRequestDispatcher("/gameover.jsp").forward(request, response);
         }
 
-        String restart = request.getParameter("restart");
 
-        if ("true".equals(restart)) {
-            currentQuestionIndex = 0;  // Reset the game
-        }
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String userChoice = request.getParameter("answer"); // Get user's choice
+        String resetChoice = request.getParameter("reset");
+
+        if ("true".equals(resetChoice)) {
+            currentQuestionIndex = 0;
+            doGet(request, response);
+        }
 
 
         if ("yes".equals(userChoice)) {

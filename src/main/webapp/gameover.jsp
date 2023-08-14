@@ -15,8 +15,8 @@
 <h1>Game Over</h1>
 <p>Unfortunately, you lost the game. Reason: ${resultText}</p>
 
-<form action="game" method="get">
-    <button type="submit">Start Over</button>
+<form action="game" method="post">
+    <button type="submit" name="reset" value="true">Start Over</button>
 </form>
 <!-- Add any additional content or styling as needed -->
 </body>
