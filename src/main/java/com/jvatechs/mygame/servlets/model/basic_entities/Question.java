@@ -15,6 +15,10 @@ public class Question implements Gradable {
     private Answer noAnswer;
     private int id;
 
+    public Question(String questionText) {
+        this.questionText = questionText;
+    }
+
     @Override
     public String toString() {
         return "Question{" +

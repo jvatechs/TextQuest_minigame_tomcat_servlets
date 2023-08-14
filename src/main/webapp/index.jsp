@@ -1,5 +1,6 @@
 <html>
 <body>
-<h2>Hello World!</h2>
+<h1>Welcome to the Game!</h1>
+<a href="game.jsp">Start Game</a>
 </body>
 </html>

@@ -8,12 +8,12 @@
 <body>
 <h1>Text Adventure Game</h1>
 <form action="${pageContext.request.contextPath}/game" method="post">
-    <p>${question}</p>
+    <p>${question.questionText}</p>
     <label>
-        <input type="radio" name="answer" value="YES"> YES
+        <input type="radio" name="answer" value="yes"> ${yesAnswer.answerText}
     </label>
     <label>
-        <input type="radio" name="answer" value="NO"> NO
+        <input type="radio" name="answer" value="no"> ${noAnswer.answerText}
     </label>
     <br>
     <input type="submit" value="Submit">
