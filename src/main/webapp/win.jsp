@@ -20,5 +20,6 @@
 </form>
 <!-- Add any additional content or styling as needed -->
 </body>
+<%@ include file="/WEB-INF/stats.jspf" %>
 </html>
 

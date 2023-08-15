@@ -1,0 +1,9 @@
+<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<div class="stats">
+    <label> Общая статистика:</label>
+    <p>Имя игрока: ${sessionScope.playerName}</p>
+    <p>Сыграно игр: ${sessionScope.gamesPlayed}</p>
+
+</div>

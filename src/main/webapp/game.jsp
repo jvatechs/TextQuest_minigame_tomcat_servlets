@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,16 +7,17 @@
 </head>
 <body>
 <h1>Text Adventure Game</h1>
-<form action="${pageContext.request.contextPath}/game" method="post">
+<form action="${pageContext.request.contextPath}/game" method="post" >
     <p>${question.questionText}</p>
     <label>
-        <input type="radio" name="answer" value="yes"> ${yesAnswer.answerText}
+        <input type="radio" name="answer" value="yes" required> ${yesAnswer.answerText}
     </label>
     <label>
-        <input type="radio" name="answer" value="no"> ${noAnswer.answerText}
+        <input type="radio" name="answer" value="no" required> ${noAnswer.answerText}
     </label>
     <br>
     <input type="submit" value="Submit">
 </form>
 </body>
+<%@ include file="/WEB-INF/stats.jspf" %>
 </html>

@@ -26,9 +26,12 @@ public class GameServlet extends HttpServlet {
         currentQuestionIndex = 0;  // Start with the first question
     }
 
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+
+
 
         if (currentQuestionIndex < questions.size()) {
             Question currentQuestion = questions.get(currentQuestionIndex);
@@ -70,6 +73,7 @@ public class GameServlet extends HttpServlet {
                 // request.getRequestDispatcher("/win.jsp").forward(request, response);
                 Result result = (Result) gradable;
                 request.setAttribute("resultText", result.getResultText());
+                incrementGamesPlayed(request);
                 request.getRequestDispatcher("/win.jsp?restart=true").forward(request, response);
             }
         } else if ("no".equals(userChoice)) {
@@ -80,16 +84,21 @@ public class GameServlet extends HttpServlet {
 
             Result result = (Result) gradable;
             request.setAttribute("resultText", result.getResultText());
+            incrementGamesPlayed(request);
             request.getRequestDispatcher("/gameover.jsp?restart=true").forward(request, response);
-
-
-//            if (gradable instanceof Question) {
-//                currentQuestionIndex++;
-//                doGet(request, response);  // Show the next question
-//            } else if (gradable instanceof Result) {
-//                // Game over logic, show appropriate JSP page
-//                // request.getRequestDispatcher("/win.jsp").forward(request, response);
-//            }
         }
+
+
+    }
+
+    private void incrementGamesPlayed(HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        Integer gamesPlayed = (Integer) session.getAttribute("gamesPlayed");
+        if (gamesPlayed == null || gamesPlayed == 0) {
+            gamesPlayed = 1;
+        } else {
+            gamesPlayed++;
+        }
+        session.setAttribute("gamesPlayed", gamesPlayed);
     }
 }
