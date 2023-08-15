@@ -1,13 +1,11 @@
-package com.jvatechs.mygame.servlets.model;
+package com.jvatechs.mygame.servlets.controller;
 
-import com.jvatechs.mygame.servlets.model.basic_entities.Answer;
-import com.jvatechs.mygame.servlets.model.basic_entities.Conditions;
-import com.jvatechs.mygame.servlets.model.basic_entities.Question;
-import com.jvatechs.mygame.servlets.model.basic_entities.Result;
+import com.jvatechs.mygame.servlets.model.Answer;
+import com.jvatechs.mygame.servlets.model.Conditions;
+import com.jvatechs.mygame.servlets.model.Question;
+import com.jvatechs.mygame.servlets.model.Result;
 import lombok.Getter;
-import lombok.Setter;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 

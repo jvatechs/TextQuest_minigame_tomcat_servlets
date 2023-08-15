@@ -1,4 +1,4 @@
-package com.jvatechs.mygame.servlets;
+package com.jvatechs.mygame.servlets.view;
 
 import javax.json.Json;
 import javax.json.JsonObject;

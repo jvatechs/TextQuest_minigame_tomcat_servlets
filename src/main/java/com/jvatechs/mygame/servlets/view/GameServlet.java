@@ -1,15 +1,14 @@
-package com.jvatechs.mygame.servlets;
+package com.jvatechs.mygame.servlets.view;
 
-import com.jvatechs.mygame.servlets.model.InitClass;
-import com.jvatechs.mygame.servlets.model.basic_entities.Gradable;
-import com.jvatechs.mygame.servlets.model.basic_entities.Question;
-import com.jvatechs.mygame.servlets.model.basic_entities.Result;
+import com.jvatechs.mygame.servlets.controller.InitClass;
+import com.jvatechs.mygame.servlets.model.Gradable;
+import com.jvatechs.mygame.servlets.model.Question;
+import com.jvatechs.mygame.servlets.model.Result;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.List;
 
 @WebServlet(name = "GameServlet", value = "/game")

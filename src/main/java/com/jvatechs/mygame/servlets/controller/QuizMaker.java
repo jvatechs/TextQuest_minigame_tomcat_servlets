@@ -1,7 +1,7 @@
-package com.jvatechs.mygame.servlets.model;
+package com.jvatechs.mygame.servlets.controller;
 
-import com.jvatechs.mygame.servlets.model.basic_entities.Answer;
-import com.jvatechs.mygame.servlets.model.basic_entities.Question;
+import com.jvatechs.mygame.servlets.model.Answer;
+import com.jvatechs.mygame.servlets.model.Question;
 
 public class QuizMaker {
     private void createMapQuestionAnswer(Question question, Answer answer) {

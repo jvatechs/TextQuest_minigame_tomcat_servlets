@@ -1,4 +1,4 @@
-package com.jvatechs.mygame.servlets.model.basic_entities;
+package com.jvatechs.mygame.servlets.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
