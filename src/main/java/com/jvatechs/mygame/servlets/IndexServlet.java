@@ -37,6 +37,9 @@ public class IndexServlet extends HttpServlet {
         session.setAttribute("playerName", playerName);
         session.setAttribute("gamesPlayed", 0);
 
+        String ipAddress = request.getRemoteAddr();
+        session.setAttribute("ipAddress", ipAddress);
+
         response.sendRedirect(request.getContextPath() + "/game");
 
     }

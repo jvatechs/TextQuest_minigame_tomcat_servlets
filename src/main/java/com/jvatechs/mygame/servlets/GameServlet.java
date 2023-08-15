@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
-@WebServlet("/game")
+@WebServlet(name = "GameServlet", value = "/game")
 public class GameServlet extends HttpServlet {
     private List<Question> questions;  // List of questions
     private int currentQuestionIndex;  // Index of the current question

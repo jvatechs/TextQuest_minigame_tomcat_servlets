@@ -1,0 +1,21 @@
+body {
+    background-image: url('images/gameover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+h1, #gameover {
+    background-color: lightgrey;
+}
+
+.stats {
+    background-color: skyblue;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 998;
+    width: 15em;
+    margin-left: 10px;
+}

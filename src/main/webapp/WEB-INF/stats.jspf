@@ -4,6 +4,6 @@
 <div class="stats">
     <label> Общая статистика:</label>
     <p>Имя игрока: ${sessionScope.playerName}</p>
+    <p>IP адрес игрока: ${sessionScope.ipAddress}</p>
     <p>Сыграно игр: ${sessionScope.gamesPlayed}</p>
-
 </div>

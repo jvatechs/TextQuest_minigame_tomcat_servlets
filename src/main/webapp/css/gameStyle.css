@@ -1,0 +1,23 @@
+body {
+    background-image: url('images/ufo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+title, h1, #question, .answer {
+    background-color: lightgrey;
+}
+#wrapper, form, h1 {
+    text-align: center;
+}
+
+.stats {
+    background-color: skyblue;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 998;
+    width: 15em;
+    margin-left: 10px;
+}
