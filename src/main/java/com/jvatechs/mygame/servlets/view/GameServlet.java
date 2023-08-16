@@ -40,9 +40,6 @@ public class GameServlet extends HttpServlet {
 
             RequestDispatcher dispatcher = request.getRequestDispatcher("/game.jsp");
             dispatcher.forward(request, response);
-        } else {
-            // Game over logic, show appropriate JSP page
-            // request.getRequestDispatcher("/gameover.jsp").forward(request, response);
         }
 
 

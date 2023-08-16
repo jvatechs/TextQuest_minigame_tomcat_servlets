@@ -44,16 +44,7 @@ public class IndexServlet extends HttpServlet {
 
     }
 
-    //    private String loadStoryIntroFromJsonFile() {
-//        InputStream inputStream = getServletContext().getResourceAsStream("story.json");
-//        InputStreamReader reader = new InputStreamReader(inputStream);
-//
-//        JsonReader jsonReader = Json.createReader(reader);
-//        JsonObject jsonObject = jsonReader.readObject();
-//        jsonReader.close();
-//
-//        return jsonObject.getJsonObject("intro").getString("text");
-//    }
+
     private JsonObject loadJsonObjectFromJsonFile() {
         InputStream inputStream = getClass().getClassLoader().getResourceAsStream("story.json");
         JsonReader jsonReader = Json.createReader(inputStream);

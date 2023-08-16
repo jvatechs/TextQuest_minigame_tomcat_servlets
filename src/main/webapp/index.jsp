@@ -15,8 +15,6 @@
     <h3> Знакомство с экипажем: </h3>
     <p>${storyAcquaintanceText}</p>
 
-<%--    <form action="${pageContext.request.contextPath}/game" method="get">--%>
-
         <label for="name" id="enterName">[Введите свое имя ниже и нажмите кнопку "Начать игру"]</label>
         <br>
         <br>
