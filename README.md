@@ -1,4 +1,4 @@
-# TextQuest_module_3
+# TextQuest
 Text minigame created from java servlets and JSP on Tomcat 9.
 
 ### For use, add Tomcat 9 configuration, run it and open http://localhost:8080/game link.
